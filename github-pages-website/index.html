@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preenchimento de ATA</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h2>Preencher ATA</h2>
+    
+    <label for="file">Selecione o modelo DOCX:</label>
+    <input type="file" id="file" accept=".docx">
+    
+    <h3>Preencha os campos:</h3>
+    <label>Data: <input type="text" id="data"></label><br>
+    <label>Responsável pela visita: <input type="text" id="responsavel"></label><br>
+    <label>Horário: <input type="text" id="horario"></label><br>
+    <label>Tipo de Reunião: <input type="text" id="tipo"></label><br>
+    <label>Local: <input type="text" id="local"></label><br>
+    <label>Temas: <input type="text" id="temas"></label><br>
+    <label>Participantes: <input type="text" id="participantes"></label><br>
+    <label>Assuntos tratados: <input type="text" id="assuntos"></label><br>
+    <label>Recomendações: <input type="text" id="recomendacoes"></label><br>
+    <label>Conclusões: <input type="text" id="conclusoes"></label><br>
+    
+    <button onclick="generateDoc()">Gerar DOCX</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
